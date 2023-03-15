@@ -2,12 +2,12 @@ body {
 	background-color: #181818;
 	height: 100%;
 	margin: 0;
+	overflow: hidden; /* Hide scrollbars */
 }
 .StoreTitle {
 	font-size: 6vh;
 	text-align: center;
 	color: #ef3939;
-	margin-bottom: 0.5vh;
 }
 
 .header {
@@ -63,7 +63,7 @@ img {
 	/* position: fixed; */
 	bottom: 5%;
 	margin-top: auto;
-	margin-bottom: auto;
+	margin-bottom: 1vh;
 	font-size: 1.2rem;
 	justify-content: center;
 	color: rgb(255, 255, 255);
