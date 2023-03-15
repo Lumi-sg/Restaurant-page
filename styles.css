@@ -1,0 +1,70 @@
+body {
+	background-color: #181818;
+	height: 100%;
+	margin: 0;
+}
+.StoreTitle {
+	font-size: 6vh;
+	text-align: center;
+	color: #ef3939;
+	margin-bottom: 0.5vh;
+}
+
+.header {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	border-radius: 1rem 1rem 0 0;
+	padding: 0.5rem;
+}
+
+button {
+	border: none;
+	color: rgb(0, 0, 0);
+	border-radius: 10px;
+	font-size: 2vh;
+	margin: 0.5vh;
+	cursor: pointer;
+	transition: 100ms;
+	font-weight: bold;
+	width: 10vh;
+	height: 3vh;
+	background-color: #d1cfcf;
+	margin-bottom: 0.5vh;
+}
+
+button:hover {
+	transform: scale(1.1);
+	transition: 150ms;
+}
+
+.content {
+	display: flex;
+	height: 50%;
+	width: auto;
+	justify-content: center;
+}
+img {
+	max-width: 50%;
+	max-height: 50%;
+	object-fit: cover;
+}
+
+.fa {
+	transition: transform 0.3s ease-in-out;
+	color: white;
+}
+.fa:hover {
+	transform: rotate(360deg) scale(1.2);
+}
+
+.footer {
+	display: flex;
+	/* position: fixed; */
+	bottom: 5%;
+	margin-top: auto;
+	margin-bottom: auto;
+	font-size: 1.2rem;
+	justify-content: center;
+	color: rgb(255, 255, 255);
+}
