@@ -1,1 +1,1 @@
-console.log("project started successfully");
+(()=>{const e=document.getElementById("home"),t=document.getElementById("menu"),c=document.getElementById("contact");e.addEventListener("click",(()=>{console.log("home button clicked")})),t.addEventListener("click",(()=>{console.log("menu button clicked")})),c.addEventListener("click",(()=>{console.log("contact button clicked")}))})();
