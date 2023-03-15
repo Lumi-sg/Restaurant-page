@@ -1,15 +1,26 @@
+import { loadPage } from "./modules/initPage.js";
+import { home } from "./modules/home.js";
+import { menu } from "./modules/menu.js";
+import { contact } from "./modules/contact.js";
+
 const homeButton = document.getElementById("home");
 const menuButton = document.getElementById("menu");
 const contactButton = document.getElementById("contact");
 
 homeButton.addEventListener("click", () => {
-	console.log("home button clicked");
+	home();
 });
 
 menuButton.addEventListener("click", () => {
-	console.log("menu button clicked");
+	menu();
 });
 
 contactButton.addEventListener("click", () => {
-	console.log("contact button clicked");
+	contact();
 });
+
+function initializePage() {
+	loadPage();
+}
+
+initializePage();
