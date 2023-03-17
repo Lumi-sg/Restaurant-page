@@ -1,5 +1,6 @@
 const loadPage = () => {
 	console.log("init page called");
+	const mainBody = document.querySelector(".mainBody");
 
 	createHeader();
 
@@ -33,24 +34,23 @@ const loadPage = () => {
 		divElement.className = "footer";
 
 		divElement.appendChild(pElement);
-		document.body.appendChild(divElement);
+		mainBody.appendChild(divElement);
 	}
 
 	function createHeader() {
 		const storeTitle = document.createElement("div");
 		storeTitle.setAttribute("class", "StoreTitle");
 		storeTitle.innerHTML = "Lazeez Shawarma";
-		document.body.append(storeTitle);
+		mainBody.append(storeTitle);
 		console.log("store title created");
 
 		const header = document.createElement("div");
 		header.className = "header";
-		document.body.append(header);
+		mainBody.append(header);
 		console.log("header created");
 
 		createButton("home", "Home");
 		createButton("menu", "Menu");
-		createButton("contact", "Contact");
 
 		function createButton(id, text) {
 			const button = document.createElement("button");
@@ -65,7 +65,7 @@ const loadPage = () => {
 	function createImage() {
 		const contentDiv = document.createElement("div");
 		contentDiv.className = "content";
-		document.body.append(contentDiv);
+		mainBody.append(contentDiv);
 
 		const contentSection = document.querySelector(".content");
 		const image = document.createElement("img");
